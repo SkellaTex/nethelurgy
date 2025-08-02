@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "nethelurgy:ore_ignite",
+    "nethelurgy:ore_tungsten",
+    "nethelurgy:ore_iron"
+  ],
+  "step": "underground_ores"
+}

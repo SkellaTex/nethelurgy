@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "nethelurgy:tungsten_ingot"
+    }
+  },
+  "pattern": [
+    "NN",
+    " E",
+    " E"
+  ],
+  "result": {
+    "item": "nethelurgy:tungsten_hoe"
+  },
+  "show_notification": true
+}

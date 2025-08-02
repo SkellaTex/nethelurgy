@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "nethelurgy:raw_tungsten_block"
+    },
+    "result": "nethelurgy:tungsten_block",
+    "experience": 9,
+    "cookingtime": 1800,
+    "conditions": [
+        {
+            "modid": "quark",
+            "type": "forge:mod_loaded"
+        },
+        {
+            "type": "quark:flag",
+            "flag": "smelt_ore_blocks"
+        }
+    ]
+}

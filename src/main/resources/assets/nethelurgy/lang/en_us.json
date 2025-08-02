@@ -1,0 +1,30 @@
+{
+  "creativetab.nethelurgy_tab": "Nethelurgy",
+
+  "block.nethelurgy.packed_netherrack": "Packed Netherrack",
+  "block.nethelurgy.basalt_iron_ore": "Basalt Iron Ore",
+  "block.nethelurgy.nether_ignite_ore": "Nether Ignite Ore",
+  "item.nethelurgy.ignite": "Ignite",
+  "block.nethelurgy.ignite_block": "Block of Ignite",
+  "block.nethelurgy.nether_tungsten_ore": "Nether Tungsten Ore",
+  "item.nethelurgy.raw_tungsten": "Raw Tungsten",
+  "item.nethelurgy.tungsten_nugget": "Tungsten Nugget",
+  "item.nethelurgy.tungsten_ingot": "Tungsten Ingot",
+  "block.nethelurgy.raw_tungsten_block": "Block of Raw Tungsten",
+  "block.nethelurgy.tungsten_block": "Block of Tungsten",
+
+  "item.nethelurgy.tungsten_sword": "Tungsten Sword",
+  "item.nethelurgy.tungsten_axe": "Tungsten Axe",
+  "item.nethelurgy.tungsten_pickaxe": "Tungsten Pickaxe",
+  "item.nethelurgy.tungsten_shovel": "Tungsten Shovel",
+  "item.nethelurgy.tungsten_hoe": "Tungsten Hoe",
+  "item.nethelurgy.tungsten_helmet": "Tungsten Helmet",
+  "item.nethelurgy.tungsten_chestplate": "Tungsten Chestplate",
+  "item.nethelurgy.tungsten_leggings": "Tungsten Leggings",
+  "item.nethelurgy.tungsten_boots": "Tungsten Boots",
+
+  "item.minecraft.potion.effect.decay_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.decay_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.decay_potion": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.decay_potion": "Arrow of Decay"
+}

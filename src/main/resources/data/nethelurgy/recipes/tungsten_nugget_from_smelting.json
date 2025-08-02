@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 400,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "nethelurgy:tungsten_pickaxe"
+    },
+    {
+      "item": "nethelurgy:tungsten_shovel"
+    },
+    {
+      "item": "nethelurgy:tungsten_axe"
+    },
+    {
+      "item": "nethelurgy:tungsten_hoe"
+    },
+    {
+      "item": "nethelurgy:tungsten_sword"
+    },
+    {
+      "item": "nethelurgy:tungsten_helmet"
+    },
+    {
+      "item": "nethelurgy:tungsten_chestplate"
+    },
+    {
+      "item": "nethelurgy:tungsten_leggings"
+    },
+    {
+      "item": "nethelurgy:tungsten_boots"
+    }
+  ],
+  "result": "nethelurgy:tungsten_nugget"
+}

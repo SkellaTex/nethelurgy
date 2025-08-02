@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "nethelurgy:end_tungsten_ore"
+  },
+  "result": "nethelurgy:tungsten_ingot"
+}

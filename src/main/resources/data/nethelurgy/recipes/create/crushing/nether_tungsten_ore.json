@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "nethelurgy:nether_tungsten_ore"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "item": "nethelurgy:raw_tungsten"
+    },
+    {
+      "chance": 0.75,
+      "item": "nethelurgy:raw_tungsten"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:netherrack"
+    }
+  ]
+}

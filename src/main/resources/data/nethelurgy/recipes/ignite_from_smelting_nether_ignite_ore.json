@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "nethelurgy:nether_ignite_ore"
+  },
+  "result": "nethelurgy:ignite"
+}

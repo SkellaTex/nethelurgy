@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "nethelurgy:block/basalt_iron_ore_side",
+    "end": "nethelurgy:block/basalt_iron_ore_top"
+  }
+}

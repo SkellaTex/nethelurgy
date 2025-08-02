@@ -1,0 +1,24 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "nethelurgy:packed_netherrack"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "chance": 0.8,
+      "item": "minecraft:quartz"
+    },
+    {
+      "chance": 0.6,
+      "count": 3,
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.02,
+      "item": "minecraft:netherite_scrap"
+    }
+  ]
+}

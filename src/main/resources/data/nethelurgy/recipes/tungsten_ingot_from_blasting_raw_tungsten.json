@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "nethelurgy:raw_tungsten"
+  },
+  "result": "nethelurgy:tungsten_ingot"
+}
