@@ -4,6 +4,7 @@
   "features": [
     "nethelurgy:ore_ignite",
     "nethelurgy:ore_tungsten",
+    "nethelurgy:ore_tungsten_extra",
     "nethelurgy:ore_iron"
   ],
   "step": "underground_ores"

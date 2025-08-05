@@ -1,5 +1,10 @@
 package net.skellatex.nethelurgy.item;
 
+import net.minecraft.resources.ResourceKey;
+import net.minecraftforge.common.util.MutableHashedLinkedMap;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -9,6 +14,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.skellatex.nethelurgy.block.ModBlocks;
+
+import static net.skellatex.nethelurgy.ModCompat.CREATE_ID;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -39,6 +46,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.TUNGSTEN_CHESTPLATE.get());
                         pOutput.accept(ModItems.TUNGSTEN_LEGGINGS.get());
                         pOutput.accept(ModItems.TUNGSTEN_BOOTS.get());
+                        if (ModList.get().isLoaded(CREATE_ID))  {
+                            pOutput.accept(ModItems.CRUSHED_RAW_TUNGSTEN.get());
+                        }
 
                     })
                     .build());

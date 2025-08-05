@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    TUNGSTEN("tungsten", 20, new int[]{ 2, 7, 5, 2 }, 10,
+    TUNGSTEN("tungsten", 20, new int[]{ 3, 6, 5, 2 }, 10,
             SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0.1f, () -> Ingredient.of(ModItems.TUNGSTEN_INGOT.get()));
 
 

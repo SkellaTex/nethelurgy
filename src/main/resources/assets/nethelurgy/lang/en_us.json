@@ -26,5 +26,7 @@
   "item.minecraft.potion.effect.decay_potion": "Potion of Decay",
   "item.minecraft.splash_potion.effect.decay_potion": "Splash Potion of Decay",
   "item.minecraft.lingering_potion.effect.decay_potion": "Lingering Potion of Decay",
-  "item.minecraft.tipped_arrow.effect.decay_potion": "Arrow of Decay"
+  "item.minecraft.tipped_arrow.effect.decay_potion": "Arrow of Decay",
+
+  "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten"
 }

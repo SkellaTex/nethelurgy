@@ -8,11 +8,11 @@
   "processingTime": 300,
   "results": [
     {
-      "item": "nethelurgy:raw_tungsten"
+      "item": "nethelurgy:crushed_raw_tungsten"
     },
     {
       "chance": 0.75,
-      "item": "nethelurgy:raw_tungsten"
+      "item": "nethelurgy:crushed_raw_tungsten"
     },
     {
       "chance": 0.75,
