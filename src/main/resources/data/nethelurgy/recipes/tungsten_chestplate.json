@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "N": {
-      "item": "nethelurgy:tungsten_ingot"
+      "tag": "forge:ingots/tungsten"
     }
   },
   "pattern": [

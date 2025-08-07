@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "nethelurgy:crushed_raw_tungsten"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "item": "nethelurgy:tungsten_nugget"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:glowstone_dust"
+    }
+  ]
+}

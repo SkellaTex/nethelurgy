@@ -2,26 +2,18 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "nethelurgy:nether_tungsten_ore"
+      "tag": "forge:raw_materials/tungsten"
     }
   ],
-  "processingTime": 300,
+  "processingTime": 400,
   "results": [
     {
-      "item": "nethelurgy:crushed_raw_tungsten"
-    },
-    {
-      "chance": 0.75,
       "item": "nethelurgy:crushed_raw_tungsten"
     },
     {
       "count": 2,
       "chance": 0.75,
       "item": "create:experience_nugget"
-    },
-    {
-      "chance": 0.125,
-      "item": "minecraft:netherrack"
     }
   ]
 }
