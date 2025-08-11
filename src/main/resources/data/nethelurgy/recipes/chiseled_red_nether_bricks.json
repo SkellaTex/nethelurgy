@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "minecraft:red_nether_brick_slab"
+    }
+  },
+  "pattern": [
+    "N",
+    "N"
+  ],
+  "result": {
+    "item": "nethelurgy:chiseled_red_nether_bricks"
+  },
+  "show_notification": true
+}

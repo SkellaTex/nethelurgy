@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_brick"
+    },
+    "E": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "pattern": [
+    "NEN",
+    "NEN"
+  ],
+  "result": {
+    "item": "nethelurgy:nether_brick_fence_gate"
+  },
+  "show_notification": true
+}

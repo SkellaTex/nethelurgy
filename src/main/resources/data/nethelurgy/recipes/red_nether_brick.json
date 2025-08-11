@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_brick"
+    },
+    "E": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NEN",
+    "NNN"
+  ],
+  "result": {
+    "item": "nethelurgy:red_nether_brick",
+    "count": 8
+  },
+  "show_notification": true
+}
