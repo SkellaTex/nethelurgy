@@ -6,6 +6,11 @@
     "nethelurgy:ignite_block",
     "nethelurgy:nether_tungsten_ore",
     "nethelurgy:raw_tungsten_block",
-    "nethelurgy:tungsten_block"
+    "nethelurgy:tungsten_block",
+    "nethelurgy:nether_brick_fence_gate",
+    "nethelurgy:cracked_red_nether_bricks",
+    "nethelurgy:chiseled_red_nether_bricks",
+    "nethelurgy:red_nether_brick_fence",
+    "nethelurgy:red_nether_brick_fence_gate"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "nethelurgy:red_nether_brick"
+    },
+    "E": {
+      "item": "minecraft:red_nether_bricks"
+    }
+  },
+  "pattern": [
+    "ENE",
+    "ENE"
+  ],
+  "result": {
+    "count": 6,
+    "item": "nethelurgy:red_nether_brick_fence"
+  },
+  "show_notification": true
+}

@@ -28,5 +28,12 @@
   "item.minecraft.lingering_potion.effect.decay_potion": "Lingering Potion of Decay",
   "item.minecraft.tipped_arrow.effect.decay_potion": "Arrow of Decay",
 
+  "item.nethelurgy.red_nether_brick": "Red Nether Brick",
+  "block.nethelurgy.cracked_red_nether_bricks": "Cracked Red Nether Bricks",
+  "block.nethelurgy.chiseled_red_nether_bricks": "Chiseled Red Nether Bricks",
+  "block.nethelurgy.red_nether_brick_fence": "Red Nether Brick Fence",
+  "block.nethelurgy.nether_brick_fence_gate": "Nether Brick Fence Gate",
+  "block.nethelurgy.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
+
   "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten"
 }
