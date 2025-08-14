@@ -4,11 +4,11 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="nethelurgy"
-version="0.2.0"
+version="0.2.1"
 displayName="Nethelurgy"
 logoFile="nethelurgy.png"
 authors="SkellaTex"
-description='''Adds ores, resources, and improves upon the Nether'''
+description='''Adds new ores, resources, and improves upon the Nether'''
 
 [[dependencies.nethelurgy]]
     modId="forge"
