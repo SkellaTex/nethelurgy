@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "nethelurgy:tungsten_block"
+    }
+  },
+  "pattern": [
+    "NN",
+    "NN"
+  ],
+  "result": {
+    "count": 4,
+    "item": "nethelurgy:cut_tungsten"
+  },
+  "show_notification": true
+}

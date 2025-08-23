@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "nethelurgy:tungsten_block"
+  },
+  "result": "nethelurgy:cut_tungsten_stairs"
+}

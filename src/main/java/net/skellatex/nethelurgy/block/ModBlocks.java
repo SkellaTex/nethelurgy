@@ -58,6 +58,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> CUT_TUNGSTEN = registerItemPropertiesBlock("cut_tungsten", () ->
+            new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+
+    public static final RegistryObject<Block> CUT_TUNGSTEN_STAIRS = registerItemPropertiesBlock("cut_tungsten_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_TUNGSTEN.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+
+    public static final RegistryObject<Block> CUT_TUNGSTEN_SLAB = registerItemPropertiesBlock("cut_tungsten_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+
     public static final RegistryObject<Block> TUNGSTEN_BARS = registerItemPropertiesBlock("tungsten_bars", () ->
             new IronBarsBlock(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 

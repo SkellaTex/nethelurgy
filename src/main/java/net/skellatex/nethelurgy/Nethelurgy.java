@@ -2,12 +2,7 @@ package net.skellatex.nethelurgy;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.alchemy.PotionBrewing;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.skellatex.nethelurgy.block.ModBlocks;
-import net.skellatex.nethelurgy.item.ModCreativeModeTabs;
 import net.skellatex.nethelurgy.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,7 +13,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.skellatex.nethelurgy.potion.BrewingRecipe;
 import net.skellatex.nethelurgy.potion.ModPotions;
 import org.slf4j.Logger;
 
@@ -35,7 +29,6 @@ public class Nethelurgy {
     public Nethelurgy() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPotions.register(modEventBus);

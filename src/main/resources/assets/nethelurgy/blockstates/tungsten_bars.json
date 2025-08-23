@@ -72,15 +72,6 @@
     },
     {
       "apply": {
-        "model": "nethelurgy:block/tungsten_bars_side",
-        "y": 90
-      },
-      "when": {
-        "east": "true"
-      }
-    },
-    {
-      "apply": {
         "model": "nethelurgy:block/tungsten_bars_side_alt"
       },
       "when": {
@@ -94,6 +85,15 @@
       },
       "when": {
         "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "nethelurgy:block/tungsten_bars_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
       }
     }
   ]

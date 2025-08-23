@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "nethelurgy:cut_tungsten"
+    }
+  },
+  "pattern": [
+    "NNN"
+  ],
+  "result": {
+    "count": 6,
+    "item": "nethelurgy:cut_tungsten_slab"
+  },
+  "show_notification": true
+}

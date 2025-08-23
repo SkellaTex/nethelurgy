@@ -2,6 +2,9 @@
   "values": [
     "nethelurgy:nether_tungsten_ore",
     "nethelurgy:raw_tungsten_block",
-    "nethelurgy:tungsten_block"
+    "nethelurgy:tungsten_block",
+    "nethelurgy:cut_tungsten",
+    "nethelurgy:cut_tungsten_stairs",
+    "nethelurgy:cut_tungsten_slab"
   ]
 }

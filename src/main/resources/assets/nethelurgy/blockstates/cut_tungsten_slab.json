@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nethelurgy:block/cut_tungsten_slab"
+    },
+    "type=double": {
+      "model": "nethelurgy:block/cut_tungsten"
+    },
+    "type=top": {
+      "model": "nethelurgy:block/cut_tungsten_slab_top"
+    }
+  }
+}

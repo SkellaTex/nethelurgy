@@ -11,6 +11,9 @@
     "nethelurgy:cracked_red_nether_bricks",
     "nethelurgy:chiseled_red_nether_bricks",
     "nethelurgy:red_nether_brick_fence",
-    "nethelurgy:red_nether_brick_fence_gate"
+    "nethelurgy:red_nether_brick_fence_gate",
+    "nethelurgy:cut_tungsten",
+    "nethelurgy:cut_tungsten_stairs",
+    "nethelurgy:cut_tungsten_slab"
   ]
 }

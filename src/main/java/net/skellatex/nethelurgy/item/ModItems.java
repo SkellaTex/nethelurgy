@@ -1,6 +1,7 @@
 package net.skellatex.nethelurgy.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.fml.ModList;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,10 +20,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> IGNITE = ITEMS.register("ignite",
             () -> new FuelItem(new Item.Properties(), 2000));
-    public static final RegistryObject<Item> CRUSHED_RAW_TUNGSTEN = ITEMS.register("crushed_raw_tungsten",
-            () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> RED_NETHER_BRICK = ITEMS.register("red_nether_brick",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_TUNGSTEN = ITEMS.register("crushed_raw_tungsten",
+            () -> new Item(new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> TUNGSTEN_SWORD = ITEMS.register("tungsten_sword",
             () -> new SwordItem(ModToolTiers.TUNGSTEN,6, -2.6F, new Item.Properties().fireResistant()));

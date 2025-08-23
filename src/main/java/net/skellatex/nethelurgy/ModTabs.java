@@ -1,5 +1,6 @@
 package net.skellatex.nethelurgy;
 
+import net.minecraftforge.fml.ModList;
 import net.skellatex.nethelurgy.block.ModBlocks;
 import net.skellatex.nethelurgy.item.ModItems;
 import java.util.function.Supplier;
@@ -14,6 +15,8 @@ import net.minecraftforge.common.util.MutableHashedLinkedMap;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+
+import static net.skellatex.nethelurgy.ModCompat.CREATE_ID;
 
 @EventBusSubscriber(modid = Nethelurgy.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ModTabs {
@@ -31,6 +34,9 @@ public class ModTabs {
             putAfter(entries, ModBlocks.RED_NETHER_BRICK_FENCE.get(), ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
             putAfter(entries, ModBlocks.RED_NETHER_BRICK_FENCE_GATE.get(), ModBlocks.CHISELED_RED_NETHER_BRICKS);
             putBefore(entries, Blocks.DIAMOND_BLOCK, ModBlocks.TUNGSTEN_BLOCK);
+            putAfter(entries, ModBlocks.TUNGSTEN_BLOCK.get(), ModBlocks.CUT_TUNGSTEN);
+            putAfter(entries, ModBlocks.CUT_TUNGSTEN.get(), ModBlocks.CUT_TUNGSTEN_STAIRS);
+            putAfter(entries, ModBlocks.CUT_TUNGSTEN_STAIRS.get(), ModBlocks.CUT_TUNGSTEN_SLAB);
             putAfter(entries, Blocks.LAPIS_BLOCK, ModBlocks.IGNITE_BLOCK);
         }
 
@@ -47,6 +53,9 @@ public class ModTabs {
             putAfter(entries, Items.GOLD_NUGGET, ModItems.TUNGSTEN_NUGGET);
             putAfter(entries, Items.GOLD_INGOT, ModItems.TUNGSTEN_INGOT);
             putAfter(entries, Items.QUARTZ, ModItems.IGNITE);
+            if (ModList.get().isLoaded(CREATE_ID))  {
+                putAfter(entries, ModItems.RAW_TUNGSTEN.get(), ModItems.CRUSHED_RAW_TUNGSTEN);
+            }
         }
 
         if (tab == CreativeModeTabs.TOOLS_AND_UTILITIES) {
