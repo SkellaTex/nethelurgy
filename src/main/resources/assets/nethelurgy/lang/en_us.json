@@ -39,5 +39,8 @@
   "block.nethelurgy.nether_brick_fence_gate": "Nether Brick Fence Gate",
   "block.nethelurgy.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
 
-  "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten"
+  "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten",
+
+  "trim_material.nethelurgy.tungsten": "Tungsten Material",
+  "trim_material.nethelurgy.ignite": "Ignite Material"
 }

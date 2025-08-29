@@ -1,0 +1,9 @@
+{
+  "asset_name": "tungsten",
+  "description": {
+    "color": "#6C936B",
+    "translate": "trim_material.nethelurgy.tungsten"
+  },
+  "ingredient": "nethelurgy:tungsten_ingot",
+  "item_model_index": -1.0
+}

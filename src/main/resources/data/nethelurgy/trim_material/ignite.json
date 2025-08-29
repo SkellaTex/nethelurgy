@@ -1,0 +1,9 @@
+{
+  "asset_name": "ignite",
+  "description": {
+    "color": "#FA590B",
+    "translate": "trim_material.nethelurgy.ignite"
+  },
+  "ingredient": "nethelurgy:ignite",
+  "item_model_index": -1.0
+}
