@@ -12,7 +12,7 @@ public class FuelBlock {
     @SubscribeEvent
     public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
         ItemStack itemstack = event.getItemStack();
-        if (itemstack.getItem() == ModBlocks.IGNITE_BLOCK.get().asItem())
+        if (itemstack.getItem() == NBlocks.IGNITE_BLOCK.get().asItem())
             event.setBurnTime(20000);
     }
 }

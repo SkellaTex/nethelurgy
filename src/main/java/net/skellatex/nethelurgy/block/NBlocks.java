@@ -5,8 +5,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.skellatex.nethelurgy.Nethelurgy;
-import net.skellatex.nethelurgy.item.FuelItem;
-import net.skellatex.nethelurgy.item.ModItems;
+import net.skellatex.nethelurgy.item.NItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class NBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Nethelurgy.MOD_ID);
 
@@ -62,7 +61,7 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 
     public static final RegistryObject<Block> CUT_TUNGSTEN_STAIRS = registerItemPropertiesBlock("cut_tungsten_stairs",
-            () -> new StairBlock(() -> ModBlocks.CUT_TUNGSTEN.get().defaultBlockState(),
+            () -> new StairBlock(() -> NBlocks.CUT_TUNGSTEN.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 
     public static final RegistryObject<Block> CUT_TUNGSTEN_SLAB = registerItemPropertiesBlock("cut_tungsten_slab", () ->
@@ -85,12 +84,12 @@ public class ModBlocks {
     }
     private static <T extends Block> RegistryObject<T> registerItemPropertiesBlock(String name, Supplier<T> block, Item.Properties properties) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        ModItems.ITEMS.register(name, () -> new BlockItem(toReturn.get(), properties));
+        NItems.ITEMS.register(name, () -> new BlockItem(toReturn.get(), properties));
         return toReturn;
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return NItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

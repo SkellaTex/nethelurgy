@@ -9,9 +9,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum NArmorMaterials implements ArmorMaterial {
     TUNGSTEN("tungsten", 20, new int[]{ 3, 6, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0.1f, () -> Ingredient.of(ModItems.TUNGSTEN_INGOT.get()));
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0.1f, () -> Ingredient.of(NItems.TUNGSTEN_INGOT.get()));
 
 
     private final String name;
@@ -25,8 +25,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = { 11, 16, 15, 13 };
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound,
-                      float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    NArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound,
+                    float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;

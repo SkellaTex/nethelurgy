@@ -8,6 +8,15 @@
   "processingTime": 350,
   "results": [
     {
+      "count": 9,
+      "item": "create:cinder_flour"
+    },
+    {
+      "count": 9,
+      "chance": 0.5,
+      "item": "create:cinder_flour"
+    },
+    {
       "chance": 0.8,
       "item": "minecraft:quartz"
     },

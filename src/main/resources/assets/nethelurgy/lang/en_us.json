@@ -27,10 +27,18 @@
   "block.nethelurgy.cut_tungsten_stairs": "Cut Tungsten Stairs",
   "block.nethelurgy.cut_tungsten_slab": "Cut Tungsten Slab",
 
-  "item.minecraft.potion.effect.decay_potion": "Potion of Decay",
-  "item.minecraft.splash_potion.effect.decay_potion": "Splash Potion of Decay",
-  "item.minecraft.lingering_potion.effect.decay_potion": "Lingering Potion of Decay",
-  "item.minecraft.tipped_arrow.effect.decay_potion": "Arrow of Decay",
+  "item.minecraft.potion.effect.decay": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.decay": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.decay": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.decay": "Arrow of Decay",
+  "item.minecraft.potion.effect.long_decay": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.long_decay": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.long_decay": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.long_decay": "Arrow of Decay",
+  "item.minecraft.potion.effect.strong_decay": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.strong_decay": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.strong_decay": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.strong_decay": "Arrow of Decay",
 
   "item.nethelurgy.red_nether_brick": "Red Nether Brick",
   "block.nethelurgy.cracked_red_nether_bricks": "Cracked Red Nether Bricks",
@@ -42,5 +50,7 @@
   "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten",
 
   "trim_material.nethelurgy.tungsten": "Tungsten Material",
-  "trim_material.nethelurgy.ignite": "Ignite Material"
+  "trim_material.nethelurgy.ignite": "Ignite Material",
+
+  "item.nethelurgy.insulated_with_tungsten": "Immune to Fire"
 }
