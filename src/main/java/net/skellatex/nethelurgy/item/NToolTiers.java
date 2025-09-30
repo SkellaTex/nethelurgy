@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NToolTiers {
     public static final Tier TUNGSTEN = TierSortingRegistry.registerTier(
-            new ForgeTier(3, 750, 4f, 0f, 12,
+            new ForgeTier(3, 750, 5f, 0f, 12,
                     ModTags.Blocks.NEEDS_TUNGSTEN_TOOL, () -> Ingredient.of(NItems.TUNGSTEN_INGOT.get())),
             new ResourceLocation(Nethelurgy.MOD_ID, "tungsten"), List.of(Tiers.DIAMOND), List.of());
 }

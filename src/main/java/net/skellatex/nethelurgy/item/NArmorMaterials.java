@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum NArmorMaterials implements ArmorMaterial {
     TUNGSTEN("tungsten", 20, new int[]{ 3, 6, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0.1f, () -> Ingredient.of(NItems.TUNGSTEN_INGOT.get()));
+            SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0.1f, () -> Ingredient.of(NItems.TUNGSTEN_INGOT.get()));
 
 
     private final String name;

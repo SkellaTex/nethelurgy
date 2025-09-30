@@ -52,5 +52,7 @@
   "trim_material.nethelurgy.tungsten": "Tungsten Material",
   "trim_material.nethelurgy.ignite": "Ignite Material",
 
-  "item.nethelurgy.insulated_with_tungsten": "Immune to Fire"
+  "item.nethelurgy.insulated_with_tungsten": "Immune to Fire",
+
+  "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance"
 }

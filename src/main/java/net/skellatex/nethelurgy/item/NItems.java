@@ -36,13 +36,13 @@ public class NItems {
             () -> new HoeItem(NToolTiers.TUNGSTEN,0, -2F, new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> TUNGSTEN_HELMET = ITEMS.register("tungsten_helmet",
-            () -> new ArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+            () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> TUNGSTEN_CHESTPLATE = ITEMS.register("tungsten_chestplate",
-            () -> new ArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+            () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> TUNGSTEN_LEGGINGS = ITEMS.register("tungsten_leggings",
-            () -> new ArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+            () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots",
-            () -> new ArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+            () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

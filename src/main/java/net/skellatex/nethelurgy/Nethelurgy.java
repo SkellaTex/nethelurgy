@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.skellatex.nethelurgy.potion.NMobEffects;
+import net.skellatex.nethelurgy.util.NAttributes;
 import org.slf4j.Logger;
 
 @Mod(Nethelurgy.MOD_ID)
@@ -31,6 +32,7 @@ public class Nethelurgy {
         modEventBus.addListener(this::commonSetup);
         NItems.register(modEventBus);
         NBlocks.register(modEventBus);
+        NAttributes.ATTRIBUTES.register(modEventBus);
         NMobEffects.DEF_REG.register(modEventBus);
         NMobEffects.POTION_DEF_REG.register(modEventBus);
 
