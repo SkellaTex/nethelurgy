@@ -1,5 +1,6 @@
 package net.skellatex.nethelurgy.util;
 
+import net.minecraft.tags.EntityTypeTags;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;

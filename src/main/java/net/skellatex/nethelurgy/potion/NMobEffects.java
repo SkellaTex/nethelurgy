@@ -25,6 +25,7 @@ public class NMobEffects {
     public static final RegistryObject<Potion> STRONG_DECAY_POTION = POTION_DEF_REG.register("strong_decay", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 420, 1)));
 
     public static void setup() {
+
         BrewingRecipeRegistry.addRecipe(new ProperBrewingRecipe(Ingredient.of(createPotion(Potions.AWKWARD)), Ingredient.of(Items.WITHER_ROSE), createPotion(DECAY_POTION)));
         BrewingRecipeRegistry.addRecipe(new ProperBrewingRecipe(Ingredient.of(createPotion(DECAY_POTION)), Ingredient.of(Items.REDSTONE), createPotion(LONG_DECAY_POTION)));
         BrewingRecipeRegistry.addRecipe(new ProperBrewingRecipe(Ingredient.of(createPotion(DECAY_POTION)), Ingredient.of(Items.GLOWSTONE_DUST), createPotion(STRONG_DECAY_POTION)));
