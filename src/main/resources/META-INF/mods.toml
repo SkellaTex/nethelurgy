@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="nethelurgy"
-version="0.2.6"
+version="0.3.0"
 displayName="Nethelurgy"
 logoFile="nethelurgy.png"
 authors="SkellaTex"

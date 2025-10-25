@@ -1,0 +1,16 @@
+{
+  "type": "nethelurgy:chest_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+  ],
+  "additions": [
+    {
+      "enchantment": "nethelurgy:searing",
+      "level": 1,
+      "chance": 0.05
+    }
+  ]
+}

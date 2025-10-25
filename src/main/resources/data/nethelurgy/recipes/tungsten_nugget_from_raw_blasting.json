@@ -1,15 +1,15 @@
 {
   "conditions": [
     {
-      "modid": "create",
+      "modid": "spelunkery",
       "type": "forge:mod_loaded"
     }
   ],
   "type": "minecraft:blasting",
-  "cookingtime": 200,
+  "cookingtime": 24,
   "experience": 0.1,
   "ingredient": {
-    "item": "nethelurgy:crushed_raw_tungsten"
+    "item": "nethelurgy:raw_tungsten_nugget"
   },
-  "result": "nethelurgy:tungsten_ingot"
+  "result": "nethelurgy:tungsten_nugget"
 }

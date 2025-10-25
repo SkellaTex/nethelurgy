@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nethelurgy:raw_tungsten"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "nethelurgy:raw_tungsten_nugget"
+  }
+}

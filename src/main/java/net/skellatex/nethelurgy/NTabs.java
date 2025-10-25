@@ -1,5 +1,6 @@
 package net.skellatex.nethelurgy;
 
+import com.simibubi.create.AllCreativeModeTabs;
 import net.minecraftforge.fml.ModList;
 import net.skellatex.nethelurgy.block.NBlocks;
 import net.skellatex.nethelurgy.item.NItems;
@@ -17,6 +18,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 import static net.skellatex.nethelurgy.ModCompat.CREATE_ID;
+import static net.skellatex.nethelurgy.ModCompat.SPELUNKERY_ID;
 
 @EventBusSubscriber(modid = Nethelurgy.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class NTabs {
@@ -53,8 +55,8 @@ public class NTabs {
             putAfter(entries, Items.GOLD_NUGGET, NItems.TUNGSTEN_NUGGET);
             putAfter(entries, Items.GOLD_INGOT, NItems.TUNGSTEN_INGOT);
             putAfter(entries, Items.QUARTZ, NItems.IGNITE);
-            if (ModList.get().isLoaded(CREATE_ID))  {
-                putAfter(entries, NItems.RAW_TUNGSTEN.get(), NItems.CRUSHED_RAW_TUNGSTEN);
+            if (ModList.get().isLoaded(SPELUNKERY_ID)) {
+                putBefore(entries, Items.COAL, NItems.RAW_TUNGSTEN_NUGGET);
             }
         }
 
@@ -74,6 +76,11 @@ public class NTabs {
             putAfter(entries, NItems.TUNGSTEN_LEGGINGS.get(), NItems.TUNGSTEN_BOOTS);
         }
 
+        if (ModList.get().isLoaded(CREATE_ID)) {
+            if (event.getTabKey().equals(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())) {
+                event.accept(NItems.CRUSHED_RAW_TUNGSTEN);
+            }
+        }
     }
 
     private static void putAfter(MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> entries, ItemLike after, Supplier<? extends ItemLike> supplier) {

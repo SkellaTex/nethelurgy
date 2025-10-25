@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "entries": [
+    "nethelurgy:searing_loot_modifier",
+    "nethelurgy:bastion_treasure_loot_modifier",
+    "nethelurgy:bastion_other_loot_modifier",
+    "nethelurgy:nether_bridge_loot_modifier"
+  ]
+}

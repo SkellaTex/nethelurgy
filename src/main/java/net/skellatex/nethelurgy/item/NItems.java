@@ -23,6 +23,8 @@ public class NItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_TUNGSTEN = ITEMS.register("crushed_raw_tungsten",
             () -> new Item(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> RAW_TUNGSTEN_NUGGET = ITEMS.register("raw_tungsten_nugget",
+            () -> new Item(new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> TUNGSTEN_SWORD = ITEMS.register("tungsten_sword",
             () -> new SwordItem(NToolTiers.TUNGSTEN,6, -2.6F, new Item.Properties().fireResistant()));

@@ -1,6 +1,4 @@
 {
-  "creativetab.nethelurgy_tab": "Nethelurgy",
-
   "block.nethelurgy.packed_netherrack": "Packed Netherrack",
   "block.nethelurgy.basalt_iron_ore": "Basalt Iron Ore",
   "block.nethelurgy.nether_ignite_ore": "Nether Ignite Ore",
@@ -48,11 +46,14 @@
   "block.nethelurgy.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
 
   "item.nethelurgy.crushed_raw_tungsten": "Crushed Raw Tungsten",
+  "item.nethelurgy.raw_tungsten_nugget": "Raw Tungsten Nugget",
 
   "trim_material.nethelurgy.tungsten": "Tungsten Material",
   "trim_material.nethelurgy.ignite": "Ignite Material",
 
   "item.nethelurgy.insulated_with_tungsten": "Immune to Fire",
 
-  "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance"
+  "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance",
+
+  "enchantment.nethelurgy.searing": "Searing"
 }

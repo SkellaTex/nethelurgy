@@ -59,7 +59,9 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
+    implementation fg.deobf("curse.maven:create-328085:6641603")
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+
 }
 
 jar {
