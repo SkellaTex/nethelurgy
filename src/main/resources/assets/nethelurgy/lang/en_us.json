@@ -55,5 +55,6 @@
 
   "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance",
 
-  "enchantment.nethelurgy.searing": "Searing"
+  "enchantment.nethelurgy.searing": "Searing",
+  "enchantment.nethelurgy.searing.desc": "Automatically smelts mined blocks and briefly sets mobs on fire."
 }
