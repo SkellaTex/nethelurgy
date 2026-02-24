@@ -5,7 +5,8 @@
     "nethelurgy:ore_ignite",
     "nethelurgy:ore_tungsten",
     "nethelurgy:ore_tungsten_extra",
-    "nethelurgy:ore_iron"
+    "nethelurgy:ore_iron",
+    "nethelurgy:ore_gold"
   ],
   "step": "underground_ores"
 }

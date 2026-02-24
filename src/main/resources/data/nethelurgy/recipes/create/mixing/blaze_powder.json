@@ -12,12 +12,15 @@
       "item": "nethelurgy:ignite"
     },
     {
-      "item": "minecraft:magma_cream"
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
     }
   ],
   "results": [
     {
-      "count": 2,
+      "count": 3,
       "item": "minecraft:blaze_powder"
     }
   ]

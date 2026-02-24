@@ -33,6 +33,9 @@ public class NBlocks {
     public static final RegistryObject<Block> BASALT_IRON_ORE = registerBlock("basalt_iron_ore",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> BLACKSTONE_GOLD_ORE = registerBlock("blackstone_gold_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops(), UniformInt.of(0,1)));
+
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).lightLevel((state) -> 10).requiresCorrectToolForDrops()));
 

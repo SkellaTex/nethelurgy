@@ -44,6 +44,7 @@ public class NTabs {
 
         if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
             putAfter(entries, Blocks.RAW_GOLD_BLOCK, NBlocks.RAW_TUNGSTEN_BLOCK);
+            putAfter(entries, Blocks.NETHER_GOLD_ORE, NBlocks.BLACKSTONE_GOLD_ORE);
             putAfter(entries, Blocks.NETHER_QUARTZ_ORE, NBlocks.NETHER_IGNITE_ORE);
             putAfter(entries, NBlocks.NETHER_IGNITE_ORE.get(), NBlocks.NETHER_TUNGSTEN_ORE);
             putAfter(entries, Blocks.DEEPSLATE_IRON_ORE, NBlocks.BASALT_IRON_ORE);
