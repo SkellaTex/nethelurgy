@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
+    "nethelurgy:searing_loot_modifier",
     "nethelurgy:searing_from_nether_bridge",
     "nethelurgy:searing_from_bastion_other",
     "nethelurgy:searing_from_bastion_treasure",
