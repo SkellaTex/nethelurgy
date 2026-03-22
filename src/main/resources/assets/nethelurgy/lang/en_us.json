@@ -22,6 +22,8 @@
   "item.nethelurgy.tungsten_leggings": "Tungsten Leggings",
   "item.nethelurgy.tungsten_boots": "Tungsten Boots",
 
+  "item.nethelurgy.tungsten_horse_armor": "Tungsten Horse Armor",
+
   "block.nethelurgy.cut_tungsten": "Cut Tungsten",
   "block.nethelurgy.cut_tungsten_stairs": "Cut Tungsten Stairs",
   "block.nethelurgy.cut_tungsten_slab": "Cut Tungsten Slab",
@@ -57,5 +59,24 @@
   "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance",
 
   "enchantment.nethelurgy.searing": "Searing",
-  "enchantment.nethelurgy.searing.desc": "Automatically smelts mined blocks and briefly sets mobs on fire."
+  "enchantment.nethelurgy.searing.desc": "Automatically smelts mined blocks and briefly sets mobs on fire.",
+
+  "item.nethelurgy.flame_banner_pattern": "Banner Pattern",
+  "item.nethelurgy.flame_banner_pattern.desc": "Flame",
+  "block.minecraft.banner.nethelurgy.flame.black": "Black Flame",
+  "block.minecraft.banner.nethelurgy.flame.blue": "Blue Flame",
+  "block.minecraft.banner.nethelurgy.flame.brown": "Brown Flame",
+  "block.minecraft.banner.nethelurgy.flame.cyan": "Cyan Flame",
+  "block.minecraft.banner.nethelurgy.flame.gray": "Gray Flame",
+  "block.minecraft.banner.nethelurgy.flame.green": "Green Flame",
+  "block.minecraft.banner.nethelurgy.flame.light_blue": "Light Blue Flame",
+  "block.minecraft.banner.nethelurgy.flame.light_gray": "Light Gray Flame",
+  "block.minecraft.banner.nethelurgy.flame.lime": "Lime Flame",
+  "block.minecraft.banner.nethelurgy.flame.magenta": "Magenta Flame",
+  "block.minecraft.banner.nethelurgy.flame.orange": "Orange Flame",
+  "block.minecraft.banner.nethelurgy.flame.pink": "Pink Flame",
+  "block.minecraft.banner.nethelurgy.flame.purple": "Purple Flame",
+  "block.minecraft.banner.nethelurgy.flame.red": "Red Flame",
+  "block.minecraft.banner.nethelurgy.flame.white": "White Flame",
+  "block.minecraft.banner.nethelurgy.flame.yellow": "Yellow Flame"
 }

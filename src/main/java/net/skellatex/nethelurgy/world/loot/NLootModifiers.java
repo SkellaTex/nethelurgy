@@ -15,7 +15,10 @@ public class NLootModifiers {
     public static final RegistryObject<Codec<SearingLootModifier>> SEARING_LOOT_MODIFIER = GLM.register("searing_loot_modifier", () -> SearingLootModifier.CODEC);
 
     static {
-        GLM.register("chest_loot_modifier", ChestLootModifier.CODEC);
+        GLM.register("add_enchanted_book", AddEnchantedBookLootModifier.CODEC);
+    }
+    static {
+        GLM.register("add_item", AddItemLootModifier.CODEC);
     }
 
     private NLootModifiers() {}

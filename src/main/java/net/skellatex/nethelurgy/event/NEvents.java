@@ -5,14 +5,20 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraftforge.event.ItemAttributeModifierEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.skellatex.nethelurgy.NConfig;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.skellatex.nethelurgy.util.NAttributes;
 
 import java.util.Collection;
+import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = Nethelurgy.MOD_ID)
 public class NEvents {
@@ -36,6 +42,29 @@ public class NEvents {
             if (fireResistance > 0.0F) {
                 event.setAmount(event.getAmount() - event.getAmount() * fireResistance);
             }
+        }
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void onItemModify(ItemAttributeModifierEvent event) {
+        ItemStack stack = event.getItemStack();
+        EquipmentSlot slot = event.getSlotType();
+
+        ArmorItem.Type type = switch (slot) {
+            case HEAD -> ArmorItem.Type.HELMET;
+            case CHEST -> ArmorItem.Type.CHESTPLATE;
+            case LEGS -> ArmorItem.Type.LEGGINGS;
+            case FEET -> ArmorItem.Type.BOOTS;
+            case MAINHAND, OFFHAND -> null;
+        };
+
+        if (type != null) {
+            UUID uuid = ArmorItem.ARMOR_MODIFIER_UUID_PER_TYPE.get(type);
+
+            if (NConfig.NETHERITE_ARMOR_FIRE_RESISTANCE.get() && (stack.is(Items.NETHERITE_HELMET) && slot == EquipmentSlot.HEAD || stack.is(Items.NETHERITE_BOOTS) && slot == EquipmentSlot.FEET || stack.is(Items.NETHERITE_CHESTPLATE) && slot == EquipmentSlot.CHEST || stack.is(Items.NETHERITE_LEGGINGS) && slot == EquipmentSlot.LEGS)) {
+                event.addModifier(NAttributes.FIRE_RESISTANCE.get(), new AttributeModifier(uuid, "Fire Resistance", 0.1D, AttributeModifier.Operation.MULTIPLY_BASE));
+            }
+
         }
     }
 }

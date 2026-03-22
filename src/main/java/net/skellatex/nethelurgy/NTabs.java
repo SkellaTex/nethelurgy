@@ -30,28 +30,36 @@ public class NTabs {
 
         if (tab == CreativeModeTabs.BUILDING_BLOCKS) {
             putAfter(entries, Blocks.NETHERRACK, NBlocks.PACKED_NETHERRACK);
-            putAfter(entries, Blocks.NETHER_BRICK_FENCE, NBlocks.NETHER_BRICK_FENCE_GATE);
-            putAfter(entries, Blocks.RED_NETHER_BRICKS, NBlocks.CRACKED_RED_NETHER_BRICKS);
-            putAfter(entries, Blocks.RED_NETHER_BRICK_WALL, NBlocks.RED_NETHER_BRICK_FENCE);
-            putAfter(entries, NBlocks.RED_NETHER_BRICK_FENCE.get(), NBlocks.RED_NETHER_BRICK_FENCE_GATE);
-            putAfter(entries, NBlocks.RED_NETHER_BRICK_FENCE_GATE.get(), NBlocks.CHISELED_RED_NETHER_BRICKS);
+            if (NConfig.NETHER_BRICK_FENCE_GATE.get()) {
+                putAfter(entries, Blocks.NETHER_BRICK_FENCE, NBlocks.NETHER_BRICK_FENCE_GATE);
+            }
+            if (NConfig.RED_NETHER_BRICK_BLOCKSET.get()) {
+                putAfter(entries, Blocks.RED_NETHER_BRICKS, NBlocks.CRACKED_RED_NETHER_BRICKS);
+                putAfter(entries, Blocks.RED_NETHER_BRICK_WALL, NBlocks.RED_NETHER_BRICK_FENCE);
+                putAfter(entries, NBlocks.RED_NETHER_BRICK_FENCE.get(), NBlocks.RED_NETHER_BRICK_FENCE_GATE);
+                putAfter(entries, NBlocks.RED_NETHER_BRICK_FENCE_GATE.get(), NBlocks.CHISELED_RED_NETHER_BRICKS);
+            }
             putBefore(entries, Blocks.DIAMOND_BLOCK, NBlocks.TUNGSTEN_BLOCK);
-            putAfter(entries, NBlocks.TUNGSTEN_BLOCK.get(), NBlocks.CUT_TUNGSTEN);
-            putAfter(entries, NBlocks.CUT_TUNGSTEN.get(), NBlocks.CUT_TUNGSTEN_STAIRS);
-            putAfter(entries, NBlocks.CUT_TUNGSTEN_STAIRS.get(), NBlocks.CUT_TUNGSTEN_SLAB);
+            if (NConfig.TUNGSTEN_BLOCKSET.get()) {
+                putAfter(entries, NBlocks.TUNGSTEN_BLOCK.get(), NBlocks.CUT_TUNGSTEN);
+                putAfter(entries, NBlocks.CUT_TUNGSTEN.get(), NBlocks.CUT_TUNGSTEN_STAIRS);
+                putAfter(entries, NBlocks.CUT_TUNGSTEN_STAIRS.get(), NBlocks.CUT_TUNGSTEN_SLAB);
+            }
             putAfter(entries, Blocks.LAPIS_BLOCK, NBlocks.IGNITE_BLOCK);
         }
 
         if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
             putAfter(entries, Blocks.RAW_GOLD_BLOCK, NBlocks.RAW_TUNGSTEN_BLOCK);
             putAfter(entries, Blocks.NETHER_GOLD_ORE, NBlocks.BLACKSTONE_GOLD_ORE);
+            putAfter(entries, NBlocks.BLACKSTONE_GOLD_ORE.get(), NBlocks.BASALT_IRON_ORE);
             putAfter(entries, Blocks.NETHER_QUARTZ_ORE, NBlocks.NETHER_IGNITE_ORE);
             putAfter(entries, NBlocks.NETHER_IGNITE_ORE.get(), NBlocks.NETHER_TUNGSTEN_ORE);
-            putAfter(entries, Blocks.DEEPSLATE_IRON_ORE, NBlocks.BASALT_IRON_ORE);
         }
 
         if (tab == CreativeModeTabs.INGREDIENTS) {
-            putAfter(entries, Items.NETHER_BRICK, NItems.RED_NETHER_BRICK);
+            if (NConfig.RED_NETHER_BRICK_BLOCKSET.get()) {
+                putAfter(entries, Items.NETHER_BRICK, NItems.RED_NETHER_BRICK);
+            }
             putAfter(entries, Items.RAW_GOLD, NItems.RAW_TUNGSTEN);
             putAfter(entries, Items.GOLD_NUGGET, NItems.TUNGSTEN_NUGGET);
             putAfter(entries, Items.GOLD_INGOT, NItems.TUNGSTEN_INGOT);
@@ -59,6 +67,7 @@ public class NTabs {
             if (ModList.get().isLoaded(SPELUNKERY_ID)) {
                 putBefore(entries, Items.COAL, NItems.RAW_TUNGSTEN_NUGGET);
             }
+            putAfter(entries, Items.PIGLIN_BANNER_PATTERN, NItems.FLAME_BANNER_PATTERN);
         }
 
         if (tab == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -75,6 +84,7 @@ public class NTabs {
             putAfter(entries, NItems.TUNGSTEN_HELMET.get(), NItems.TUNGSTEN_CHESTPLATE);
             putAfter(entries, NItems.TUNGSTEN_CHESTPLATE.get(), NItems.TUNGSTEN_LEGGINGS);
             putAfter(entries, NItems.TUNGSTEN_LEGGINGS.get(), NItems.TUNGSTEN_BOOTS);
+            putAfter(entries, Items.GOLDEN_HORSE_ARMOR, NItems.TUNGSTEN_HORSE_ARMOR);
         }
 
         if (ModList.get().isLoaded(CREATE_ID)) {

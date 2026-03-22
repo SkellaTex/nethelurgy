@@ -1,11 +1,13 @@
 package net.skellatex.nethelurgy.item;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.skellatex.nethelurgy.util.NBannerPatternTags;
 
 public class NItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -45,6 +47,12 @@ public class NItems {
             () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots",
             () -> new TungstenArmorItem(NArmorMaterials.TUNGSTEN, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> TUNGSTEN_HORSE_ARMOR = ITEMS.register("tungsten_horse_armor",
+            () -> new TungstenHorseArmorItem(new Item.Properties().fireResistant().stacksTo(1)));
+
+    public static final RegistryObject<Item> FLAME_BANNER_PATTERN = ITEMS.register("flame_banner_pattern",
+            () -> new BannerPatternItem(NBannerPatternTags.FLAME, new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

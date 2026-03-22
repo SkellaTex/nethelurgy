@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "nethelurgy:ignite"
+    }
+  ],
+  "result": {
+    "item": "nethelurgy:flame_banner_pattern"
+  }
+}

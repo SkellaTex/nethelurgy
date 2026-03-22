@@ -70,15 +70,6 @@ public class NBlocks {
     public static final RegistryObject<Block> CUT_TUNGSTEN_SLAB = registerItemPropertiesBlock("cut_tungsten_slab", () ->
             new SlabBlock(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 
-    public static final RegistryObject<Block> TUNGSTEN_BARS = registerItemPropertiesBlock("tungsten_bars", () ->
-            new IronBarsBlock(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
-
-    public static final RegistryObject<Block> TUNGSTEN_DOOR = registerBlock("tungsten_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
-
-    public static final RegistryObject<Block> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
-
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

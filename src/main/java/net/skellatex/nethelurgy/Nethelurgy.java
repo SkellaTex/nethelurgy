@@ -1,8 +1,11 @@
 package net.skellatex.nethelurgy;
 
 import com.mojang.logging.LogUtils;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.config.ModConfig;
 import net.skellatex.nethelurgy.block.NBlocks;
 import net.skellatex.nethelurgy.enchantment.NEnchantments;
+import net.skellatex.nethelurgy.item.NBannerPatterns;
 import net.skellatex.nethelurgy.item.NItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,8 +37,11 @@ public class Nethelurgy {
         NMobEffects.POTION_DEF_REG.register(modEventBus);
         NEnchantments.register(modEventBus);
         NLootModifiers.register(modEventBus);
+        NBannerPatterns.BANNER_PATTERNS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, NConfig.SPEC, "nethelurgy-common.toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

@@ -4,16 +4,16 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.FireAspectEnchantment;
-import org.apache.commons.lang3.function.TriFunction;
 import org.jetbrains.annotations.NotNull;
+import net.skellatex.nethelurgy.NConfig;
 
 import java.util.List;
 
 public class SearingEnchantment extends Enchantment {
     protected SearingEnchantment() {
-        super(Rarity.VERY_RARE, SearingEnchantmentCategory.SMELTERS, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, EnchantmentCategory.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     public int getMinCost(int p_45264_) {
@@ -43,5 +43,15 @@ public class SearingEnchantment extends Enchantment {
                 target.setSecondsOnFire(4);
             }
         }
+    }
+
+    @Override
+    public boolean isTradeable() {
+        return false;
+    }
+
+    @Override
+    public boolean isDiscoverable() {
+        return NConfig.ENABLE_SEARING.get();
     }
 }
