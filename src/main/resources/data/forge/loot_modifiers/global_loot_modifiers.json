@@ -5,6 +5,9 @@
     "nethelurgy:searing_from_nether_bridge",
     "nethelurgy:searing_from_bastion_other",
     "nethelurgy:searing_from_bastion_treasure",
-    "nethelurgy:tungsten_horse_armor_from_nether_bridge"
+    "nethelurgy:tungsten_horse_armor_from_nether_bridge",
+    "nethelurgy:netherite_scrap_from_piglin_brutes",
+    "nethelurgy:tungsten_and_ignite_from_nether_bridge",
+    "nethelurgy:tungsten_and_ignite_from_bastion_other"
   ]
 }

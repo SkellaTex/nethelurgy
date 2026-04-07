@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nethelurgy:block/blackstone_diamond_ore_top",
+    "side": "nethelurgy:block/blackstone_diamond_ore_side"
+  }
+}

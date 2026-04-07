@@ -2,7 +2,7 @@
   "type": "forge:add_features",
   "biomes": "minecraft:basalt_deltas",
   "features": [
-    "nethelurgy:ore_gold_extra"
+    "nethelurgy:ore_diamond_extra"
   ],
   "step": "underground_ores"
 }

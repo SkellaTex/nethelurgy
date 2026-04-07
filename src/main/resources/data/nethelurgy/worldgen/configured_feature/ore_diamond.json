@@ -1,12 +1,12 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "discard_chance_on_air_exposure": 0.0,
-    "size": 10,
+    "discard_chance_on_air_exposure": 0.5,
+    "size": 6,
     "targets": [
       {
         "state": {
-          "Name": "nethelurgy:blackstone_gold_ore"
+          "Name": "nethelurgy:blackstone_diamond_ore"
         },
         "target": {
           "block": "minecraft:blackstone",

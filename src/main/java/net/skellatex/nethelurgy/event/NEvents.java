@@ -16,6 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.skellatex.nethelurgy.NConfig;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.skellatex.nethelurgy.util.NAttributes;
+import net.skellatex.nethelurgy.util.NTags;
 
 import java.util.Collection;
 import java.util.UUID;
@@ -43,6 +44,22 @@ public class NEvents {
                 event.setAmount(event.getAmount() - event.getAmount() * fireResistance);
             }
         }
+
+        if (source.is(NTags.DamageTypes.IS_MAGIC)) {
+            float magicResistance = 0.0F;
+            for (EquipmentSlot slot : EquipmentSlot.values()) {
+                if (slot.getType() == EquipmentSlot.Type.ARMOR) {
+                    ItemStack stack = target.getItemBySlot(slot);
+                    Collection<AttributeModifier> fireRes = stack.getAttributeModifiers(slot).get(NAttributes.MAGIC_RESISTANCE.get());
+                    if (!fireRes.isEmpty()) {
+                        magicResistance += fireRes.stream().mapToDouble(AttributeModifier::getAmount).sum();
+                    }
+                }
+            }
+            if (magicResistance > 0.0F) {
+                event.setAmount(event.getAmount() - event.getAmount() * magicResistance);
+            }
+        }
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
@@ -63,6 +80,10 @@ public class NEvents {
 
             if (NConfig.NETHERITE_ARMOR_FIRE_RESISTANCE.get() && (stack.is(Items.NETHERITE_HELMET) && slot == EquipmentSlot.HEAD || stack.is(Items.NETHERITE_BOOTS) && slot == EquipmentSlot.FEET || stack.is(Items.NETHERITE_CHESTPLATE) && slot == EquipmentSlot.CHEST || stack.is(Items.NETHERITE_LEGGINGS) && slot == EquipmentSlot.LEGS)) {
                 event.addModifier(NAttributes.FIRE_RESISTANCE.get(), new AttributeModifier(uuid, "Fire Resistance", 0.1D, AttributeModifier.Operation.MULTIPLY_BASE));
+            }
+
+            if (NConfig.GOLD_ARMOR_MAGIC_RESISTANCE.get() && (stack.is(Items.GOLDEN_HELMET) && slot == EquipmentSlot.HEAD || stack.is(Items.GOLDEN_BOOTS) && slot == EquipmentSlot.FEET || stack.is(Items.GOLDEN_CHESTPLATE) && slot == EquipmentSlot.CHEST || stack.is(Items.GOLDEN_LEGGINGS) && slot == EquipmentSlot.LEGS)) {
+                event.addModifier(NAttributes.MAGIC_RESISTANCE.get(), new AttributeModifier(uuid, "Magic Resistance", 0.15D, AttributeModifier.Operation.MULTIPLY_BASE));
             }
 
         }

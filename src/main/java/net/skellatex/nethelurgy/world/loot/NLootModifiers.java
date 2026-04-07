@@ -20,6 +20,9 @@ public class NLootModifiers {
     static {
         GLM.register("add_item", AddItemLootModifier.CODEC);
     }
+    static {
+        GLM.register("add_loot_table", AddLootTableModifier.CODEC);
+    }
 
     private NLootModifiers() {}
 

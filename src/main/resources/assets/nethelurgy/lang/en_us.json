@@ -2,6 +2,7 @@
   "block.nethelurgy.packed_netherrack": "Packed Netherrack",
   "block.nethelurgy.basalt_iron_ore": "Basalt Iron Ore",
   "block.nethelurgy.blackstone_gold_ore": "Blackstone Gold Ore",
+  "block.nethelurgy.blackstone_diamond_ore": "Blackstone Diamond Ore",
   "block.nethelurgy.nether_ignite_ore": "Nether Ignite Ore",
   "item.nethelurgy.ignite": "Ignite",
   "block.nethelurgy.ignite_block": "Block of Ignite",
@@ -57,6 +58,7 @@
   "item.nethelurgy.insulated_with_tungsten": "Immune to Fire",
 
   "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance",
+  "attribute.nethelurgy.name.generic.magic_protection": "Magic Resistance",
 
   "enchantment.nethelurgy.searing": "Searing",
   "enchantment.nethelurgy.searing.desc": "Automatically smelts mined blocks and briefly sets mobs on fire.",

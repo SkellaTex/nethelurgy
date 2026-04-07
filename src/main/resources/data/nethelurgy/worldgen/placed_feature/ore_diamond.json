@@ -1,9 +1,9 @@
 {
-  "feature": "nethelurgy:ore_gold",
+  "feature": "nethelurgy:ore_diamond",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 10
+      "count": 12
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 10
+          "above_bottom": 32
         },
         "min_inclusive": {
-          "above_bottom": 10
+          "above_bottom": 5
         }
       }
     },

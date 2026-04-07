@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "nethelurgy:blackstone_diamond_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "spelunkery:rough_diamond"
+    },
+    {
+      "chance": 0.75,
+      "item": "spelunkery:rough_diamond"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:blackstone"
+    }
+  ]
+}
