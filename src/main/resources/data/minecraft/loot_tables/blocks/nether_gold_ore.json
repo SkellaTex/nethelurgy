@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "nethelurgy:basalt_iron_ore"
+              "name": "minecraft:nether_gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -43,11 +43,20 @@
                   }
                 }
               ],
-              "name": "minecraft:iron_ingot"
+              "name": "minecraft:gold_ingot"
             },
             {
               "type": "minecraft:item",
               "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 6.0,
+                    "min": 2.0
+                  },
+                  "function": "minecraft:set_count"
+                },
                 {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
@@ -57,12 +66,13 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_iron"
+              "name": "minecraft:gold_nugget"
             }
           ]
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:blocks/nether_gold_ore"
 }

@@ -42,6 +42,9 @@ public class NEvents {
             }
             if (fireResistance > 0.0F) {
                 event.setAmount(event.getAmount() - event.getAmount() * fireResistance);
+                if (fireResistance == 0.6F) {
+                    event.getEntity().clearFire();
+                }
             }
         }
 

@@ -80,5 +80,10 @@
   "block.minecraft.banner.nethelurgy.flame.purple": "Purple Flame",
   "block.minecraft.banner.nethelurgy.flame.red": "Red Flame",
   "block.minecraft.banner.nethelurgy.flame.white": "White Flame",
-  "block.minecraft.banner.nethelurgy.flame.yellow": "Yellow Flame"
+  "block.minecraft.banner.nethelurgy.flame.yellow": "Yellow Flame",
+
+  "advancements.nether.obtain_tungsten.title": "Heat Resistant",
+  "advancements.nether.obtain_tungsten.description": "Smelt a Tungsten Ingot",
+  "advancements.nether.tungsten_armor.title": "Flame Retardant",
+  "advancements.nether.tungsten_armor.description": "Get a full set of Tungsten Armor"
 }

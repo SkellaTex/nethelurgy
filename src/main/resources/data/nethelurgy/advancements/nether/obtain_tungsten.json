@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "tungsten": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nethelurgy:tungsten_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.nether.obtain_tungsten.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "nethelurgy:tungsten_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.nether.obtain_tungsten.title"
+    }
+  },
+  "requirements": [
+    [
+      "tungsten"
+    ]
+  ]
+}
