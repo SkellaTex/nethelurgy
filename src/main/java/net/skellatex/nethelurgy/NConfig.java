@@ -1,7 +1,6 @@
 package net.skellatex.nethelurgy;
 
 import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 
 public class NConfig {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -13,6 +12,7 @@ public class NConfig {
     public static final ForgeConfigSpec.BooleanValue RED_NETHER_BRICK_BLOCKSET;
     public static final ForgeConfigSpec.BooleanValue NETHER_BRICK_FENCE_GATE;
     public static final ForgeConfigSpec.BooleanValue TUNGSTEN_BLOCKSET;
+    public static final ForgeConfigSpec.BooleanValue HOT_BLOCK_BURNING;
 
     static {
         BUILDER.push("Nethelurgy Config");
@@ -28,6 +28,8 @@ public class NConfig {
         NETHER_BRICK_FENCE_GATE = BUILDER.comment("Whether Nether Brick Fence Gate appears in creative tabs (default = true)").define("Nether Brick Fence Gate", true);
 
         TUNGSTEN_BLOCKSET = BUILDER.comment("Whether Cut Tungsten blocks appear in creative tabs (default = true)").define("Tungsten Blockset", true);
+
+        HOT_BLOCK_BURNING = BUILDER.comment("Whether hot blocks like Magma Blocks should burn the player when mined (default = false)").define("Hot Block Burning", false);
 
         BUILDER.pop();
         SPEC = BUILDER.build();

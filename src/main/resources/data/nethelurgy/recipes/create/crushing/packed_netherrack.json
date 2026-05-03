@@ -14,25 +14,25 @@
   "processingTime": 350,
   "results": [
     {
-      "count": 9,
+      "count": 3,
       "item": "create:cinder_flour"
     },
     {
-      "count": 9,
+      "count": 3,
       "chance": 0.5,
       "item": "create:cinder_flour"
     },
     {
-      "chance": 0.8,
+      "chance": 0.75,
       "item": "minecraft:quartz"
     },
     {
-      "chance": 0.6,
+      "chance": 0.5,
       "count": 3,
       "item": "minecraft:gold_nugget"
     },
     {
-      "chance": 0.02,
+      "chance": 0.01,
       "item": "minecraft:netherite_scrap"
     }
   ]

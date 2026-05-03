@@ -1,8 +1,8 @@
 {
   "values": [
-    "minecraft:magic",
-    "minecraft:indirect_magic",
-    "minecraft:sonic_boom",
-    "minecraft:thorns"
+    "#minecraft:witch_resistant_to",
+    "minecraft:wither",
+    "minecraft:wither_skull",
+    "minecraft:dragon_breath"
   ]
 }

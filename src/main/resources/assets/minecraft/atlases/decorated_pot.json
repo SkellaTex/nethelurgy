@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "type": "blueprint:paletted_permutations",
+      "palette_key": "clayworks:entity/decorated_pot_trim_palettes/trim_palette",
+      "permutations": {
+        "nethelurgy_ignite": "nethelurgy:entity/decorated_pot_trim_palettes/ignite",
+        "nethelurgy_tungsten": "nethelurgy:entity/decorated_pot_trim_palettes/tungsten"
+      },
+      "sources": [
+        {
+          "type": "minecraft:directory",
+          "prefix": "entity/decorated_pot_trim_patterns/",
+          "source": "entity/decorated_pot_trim_patterns"
+        }
+      ]
+    }
+  ]
+}

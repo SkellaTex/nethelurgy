@@ -25,7 +25,7 @@ mixin {
 
 version = "${project.minecraft_version}-${project.mod_version}"
 group = 'net.skellatex.nethelurgy'
-archivesBaseName = 'Nethelurgy'
+archivesBaseName = 'nethelurgy'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -60,6 +60,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
     implementation fg.deobf("curse.maven:create-328085:6641603")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:8007609")
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
 }
