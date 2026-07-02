@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/crossbow",
+  "textures": {
+    "layer0": "nethelurgy:item/crossbow_tungsten_bolt"
+  }
+}

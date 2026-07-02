@@ -20,7 +20,8 @@ public class NTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> TUNGSTEN_ARMOR = registerItemTag("tungsten_armor");
+        public static final TagKey<Item> CROSSBOW_BOLTS = registerItemTag("crossbow_bolts");
+        public static final TagKey<Item> TUNGSTEN_UPGRADE_INCOMPATIBLE = registerItemTag("tungsten_upgrade_incompatible");
     }
 
     private static TagKey<Item> registerItemTag(String name) {

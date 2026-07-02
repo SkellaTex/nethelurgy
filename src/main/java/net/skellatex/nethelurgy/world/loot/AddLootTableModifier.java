@@ -11,7 +11,6 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
-import net.skellatex.nethelurgy.NConfig;
 
 import javax.annotation.Nonnull;
 import java.util.function.Supplier;

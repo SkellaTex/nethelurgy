@@ -1,5 +1,6 @@
 package net.skellatex.nethelurgy.registry;
 
+import net.minecraft.world.entity.vehicle.AbstractMinecart;
 import net.minecraft.world.item.*;
 import net.minecraftforge.fml.ModList;
 import net.skellatex.nethelurgy.Nethelurgy;
@@ -8,9 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skellatex.nethelurgy.compat.FarmersDelightCompat;
-import net.skellatex.nethelurgy.content.item.FuelItem;
-import net.skellatex.nethelurgy.content.item.TungstenArmorItem;
-import net.skellatex.nethelurgy.content.item.TungstenHorseArmorItem;
+import net.skellatex.nethelurgy.content.item.*;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -57,9 +56,16 @@ public class NItems {
     public static final RegistryObject<Item> TUNGSTEN_HORSE_ARMOR = ITEMS.register("tungsten_horse_armor",
             () -> new TungstenHorseArmorItem(new Item.Properties().fireResistant().stacksTo(1)));
 
+    public static final RegistryObject<Item> TUNGSTEN_BOLT = ITEMS.register("tungsten_bolt",
+            () -> new TungstenBoltItem(new Item.Properties().fireResistant()));
+
     // Misc.
     public static final RegistryObject<Item> FLAME_BANNER_PATTERN = ITEMS.register("flame_banner_pattern",
             () -> new BannerPatternItem(NBannerPatternTags.FLAME, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> FIREBOMB_MINECART = ITEMS.register("firebomb_minecart",
+            () -> new FirebombMinecartItem(AbstractMinecart.Type.TNT, NEntityTypes.FIREBOMB_MINECART));
+    public static final RegistryObject<Item> LIGHTER = ITEMS.register("lighter",
+            () -> new FlintAndSteelItem(new Item.Properties().durability(0).fireResistant()));
 
     // Compat
     public static final RegistryObject<Item> CRUSHED_RAW_TUNGSTEN = ITEMS.register("crushed_raw_tungsten",

@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "modid": "oreganized",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nethelurgy:tungsten_bolt_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "nethelurgy:tungsten_bolt"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "nethelurgy:block/raw_tungsten_bricks"
+  }
+}

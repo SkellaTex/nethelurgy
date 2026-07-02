@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nethelurgy:block/raw_tungsten_brick_slab"
+    },
+    "type=double": {
+      "model": "nethelurgy:block/raw_tungsten_bricks"
+    },
+    "type=top": {
+      "model": "nethelurgy:block/raw_tungsten_brick_slab_top"
+    }
+  }
+}

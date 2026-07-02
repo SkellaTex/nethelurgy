@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "nethelurgy:block/raw_tungsten_bricks"
+  }
+}

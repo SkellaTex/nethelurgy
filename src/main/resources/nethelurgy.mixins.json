@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.skellatex.nethelurgy.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "nethelurgy.refmap.json",
+  "mixins": [
+    "CrossbowItemMixin",
+    "ItemEntityMixin"
+  ],
+  "client": [
+
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "nethelurgy:tungsten_bolt",
+      "required": false
+    },
+    {
+      "id": "oreganized:lead_bolt",
+      "required": false
+    }
+  ]
+}

@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="nethelurgy"
-version="0.4.3"
+version="0.5.0"
 displayName="Nethelurgy"
 logoFile="nethelurgy.png"
 authors="SkellaTex"
@@ -18,8 +18,8 @@ description='''Adds new ores, resources, and improves upon the Nether'''
     side="BOTH"
 
 [[dependencies.nethelurgy]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="1.20.1"
-    ordering="NONE"
+    modId="oreganized"
+    mandatory=false
+    versionRange="*"
+    ordering="AFTER"
     side="BOTH"

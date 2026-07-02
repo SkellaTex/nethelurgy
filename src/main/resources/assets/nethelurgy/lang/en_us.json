@@ -1,11 +1,14 @@
 {
   "block.nethelurgy.packed_netherrack": "Packed Netherrack",
   "block.nethelurgy.basalt_iron_ore": "Basalt Iron Ore",
-  "block.nethelurgy.blackstone_gold_ore": "Blackstone Gold Ore",
   "block.nethelurgy.blackstone_diamond_ore": "Blackstone Diamond Ore",
   "block.nethelurgy.nether_ignite_ore": "Nether Ignite Ore",
   "item.nethelurgy.ignite": "Ignite",
   "block.nethelurgy.ignite_block": "Block of Ignite",
+  "block.nethelurgy.firebomb": "Firebomb",
+  "entity.nethelurgy.primed_firebomb": "Primed Firebomb",
+  "item.nethelurgy.firebomb_minecart": "Minecart with Firebomb",
+  "entity.nethelurgy.firebomb_minecart": "Minecart with Firebomb",
   "block.nethelurgy.nether_tungsten_ore": "Nether Tungsten Ore",
   "item.nethelurgy.raw_tungsten": "Raw Tungsten",
   "item.nethelurgy.tungsten_nugget": "Tungsten Nugget",
@@ -24,6 +27,10 @@
   "item.nethelurgy.tungsten_boots": "Tungsten Boots",
 
   "item.nethelurgy.tungsten_horse_armor": "Tungsten Horse Armor",
+
+  "item.nethelurgy.tungsten_bolt": "Tungsten Bolt",
+  "entity.nethelurgy.tungsten_bolt": "Tungsten Bolt",
+  "block.nethelurgy.tungsten_bolt_crate": "Tungsten Bolt Crate",
 
   "block.nethelurgy.cut_tungsten": "Cut Tungsten",
   "block.nethelurgy.cut_tungsten_stairs": "Cut Tungsten Stairs",
@@ -56,7 +63,7 @@
   "trim_material.nethelurgy.tungsten": "Tungsten Material",
   "trim_material.nethelurgy.ignite": "Ignite Material",
 
-  "item.nethelurgy.insulated_with_tungsten": "Immune to Fire",
+  "item.nethelurgy.fireproof": "Fireproof",
 
   "attribute.nethelurgy.name.generic.fire_protection": "Fire Resistance",
   "attribute.nethelurgy.name.generic.magic_protection": "Magic Resistance",

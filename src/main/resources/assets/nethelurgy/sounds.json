@@ -1,0 +1,11 @@
+{
+  "tungsten_bolt_hit": {
+    "sounds": [
+      {
+        "name": "nethelurgy:tungsten_bolt_hit",
+        "volume": 0.4
+      }
+    ],
+    "subtitle": "subtitles.nethelurgy.tungsten_bolt_hit"
+  }
+}

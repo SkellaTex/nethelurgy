@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "nethelurgy:block/raw_tungsten_bricks",
+    "side": "nethelurgy:block/raw_tungsten_bricks",
+    "top": "nethelurgy:block/raw_tungsten_bricks"
+  }
+}

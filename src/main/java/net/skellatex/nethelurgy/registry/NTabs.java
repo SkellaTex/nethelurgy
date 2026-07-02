@@ -89,6 +89,19 @@ public class NTabs {
             putAfter(entries, NItems.TUNGSTEN_CHESTPLATE.get(), NItems.TUNGSTEN_LEGGINGS);
             putAfter(entries, NItems.TUNGSTEN_LEGGINGS.get(), NItems.TUNGSTEN_BOOTS);
             putAfter(entries, Items.GOLDEN_HORSE_ARMOR, NItems.TUNGSTEN_HORSE_ARMOR);
+            putAfter(entries, Items.SPECTRAL_ARROW, NItems.TUNGSTEN_BOLT);
+            putAfter(entries, Blocks.TNT, NBlocks.FIREBOMB);
+        }
+
+        if (ModList.get().isLoaded(OREGANIZED_ID)) {
+            if (tab == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+                putAfter(entries, Blocks.CHEST, NBlocks.TUNGSTEN_BOLT_CRATE);
+            }
+        }
+
+        if (tab == CreativeModeTabs.REDSTONE_BLOCKS) {
+            putAfter(entries, Blocks.TNT, NBlocks.FIREBOMB);
+            putAfter(entries, Items.TNT_MINECART, NItems.FIREBOMB_MINECART);
         }
 
         if (ModList.get().isLoaded(CREATE_ID)) {

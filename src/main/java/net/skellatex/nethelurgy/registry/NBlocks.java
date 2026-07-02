@@ -3,6 +3,7 @@ package net.skellatex.nethelurgy.registry;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.material.PushReaction;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -11,6 +12,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.skellatex.nethelurgy.content.block.FirebombBlock;
 
 import java.util.function.Supplier;
 
@@ -18,58 +20,64 @@ public class NBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Nethelurgy.MOD_ID);
 
+    // Ores
     public static final RegistryObject<Block> NETHER_IGNITE_ORE = registerBlock("nether_ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops(), UniformInt.of(1, 3)));
-
-    public static final RegistryObject<Block> PACKED_NETHERRACK = registerBlock("packed_netherrack",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(3.6f, 3.6f).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> NETHER_TUNGSTEN_ORE = registerBlock("nether_tungsten_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> BASALT_IRON_ORE = registerBlock("basalt_iron_ore",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
-
-    public static final RegistryObject<Block> BLACKSTONE_GOLD_ORE = registerBlock("blackstone_gold_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops(), UniformInt.of(0,1)));
-
     public static final RegistryObject<Block> BLACKSTONE_DIAMOND_ORE = registerBlock("blackstone_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
 
+    // Storage Blocks
+    public static final RegistryObject<Block> PACKED_NETHERRACK = registerBlock("packed_netherrack",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3.6f, 3.6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).lightLevel((state) -> 10).requiresCorrectToolForDrops()));
-
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).lightLevel((state) -> 10).requiresCorrectToolForDrops().ignitedByLava()));
     public static final RegistryObject<Block> RAW_TUNGSTEN_BLOCK = registerItemPropertiesBlock("raw_tungsten_block", () ->
             new Block(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
-
     public static final RegistryObject<Block> TUNGSTEN_BLOCK = registerItemPropertiesBlock("tungsten_block", () ->
-            new Block(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+            new Block(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL).pushReaction(PushReaction.BLOCK)), new Item.Properties().fireResistant());
 
+    // Decorative Blocks
     public static final RegistryObject<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
-
     public static final RegistryObject<Block> RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
-
     public static final RegistryObject<Block> RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> CRACKED_RED_NETHER_BRICKS = registerBlock("cracked_red_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CUT_TUNGSTEN = registerItemPropertiesBlock("cut_tungsten", () ->
             new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
-
     public static final RegistryObject<Block> CUT_TUNGSTEN_STAIRS = registerItemPropertiesBlock("cut_tungsten_stairs",
             () -> new StairBlock(() -> NBlocks.CUT_TUNGSTEN.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
-
     public static final RegistryObject<Block> CUT_TUNGSTEN_SLAB = registerItemPropertiesBlock("cut_tungsten_slab", () ->
             new SlabBlock(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+
+    // Misc.
+    public static final RegistryObject<Block> FIREBOMB = registerBlock("firebomb",
+            () -> new FirebombBlock(BlockBehaviour.Properties.copy(Blocks.TNT)));
+
+    // Compat
+    public static final RegistryObject<Block> TUNGSTEN_BOLT_CRATE = registerItemPropertiesBlock("tungsten_bolt_crate", () ->
+            new Block(BlockBehaviour.Properties.of().strength(1.5F).sound(SoundType.NETHER_WOOD)), new Item.Properties().fireResistant());
+
+    public static final RegistryObject<Block> RAW_TUNGSTEN_BRICKS = registerItemPropertiesBlock("raw_tungsten_bricks", () ->
+            new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+    public static final RegistryObject<Block> RAW_TUNGSTEN_BRICK_STAIRS = registerItemPropertiesBlock("raw_tungsten_brick_stairs",
+            () -> new StairBlock(() -> NBlocks.RAW_TUNGSTEN_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+    public static final RegistryObject<Block> RAW_TUNGSTEN_BRICK_SLAB = registerItemPropertiesBlock("raw_tungsten_brick_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+    public static final RegistryObject<Block> RAW_TUNGSTEN_BRICK_WALL = registerItemPropertiesBlock("raw_tungsten_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(NBlocks.RAW_TUNGSTEN_BRICKS.get()).strength(1.5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
