@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{
+      "item": "nethelurgy:raw_tungsten_bricks"
+    }
+  ],
+  "result": {
+    "item": "nethelurgy:raw_tungsten",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+} 

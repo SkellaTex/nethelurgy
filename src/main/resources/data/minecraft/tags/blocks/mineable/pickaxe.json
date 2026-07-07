@@ -2,7 +2,6 @@
   "values": [
     "nethelurgy:packed_netherrack",
     "nethelurgy:basalt_iron_ore",
-    "nethelurgy:blackstone_gold_ore",
     "nethelurgy:blackstone_diamond_ore",
     "nethelurgy:nether_ignite_ore",
     "nethelurgy:ignite_block",
@@ -16,6 +15,10 @@
     "nethelurgy:red_nether_brick_fence_gate",
     "nethelurgy:cut_tungsten",
     "nethelurgy:cut_tungsten_stairs",
-    "nethelurgy:cut_tungsten_slab"
+    "nethelurgy:cut_tungsten_slab",
+    "nethelurgy:raw_tungsten_bricks",
+    "nethelurgy:raw_tungsten_brick_stairs",
+    "nethelurgy:raw_tungsten_brick_slab",
+    "nethelurgy:raw_tungsten_brick_wall"
   ]
 }

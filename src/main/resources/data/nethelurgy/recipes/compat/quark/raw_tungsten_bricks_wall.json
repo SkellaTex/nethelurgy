@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "nethelurgy:raw_tungsten_bricks"
+    }
+  },
+  "result": {
+    "item": "nethelurgy:raw_tungsten_bricks_wall",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+} 

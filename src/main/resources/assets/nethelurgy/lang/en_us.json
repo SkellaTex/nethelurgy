@@ -36,6 +36,11 @@
   "block.nethelurgy.cut_tungsten_stairs": "Cut Tungsten Stairs",
   "block.nethelurgy.cut_tungsten_slab": "Cut Tungsten Slab",
 
+  "block.nethelurgy.raw_tungsten_bricks": "Raw Tungsten Bricks",
+  "block.nethelurgy.raw_tungsten_brick_stairs": "Raw Tungsten Brick Stairs",
+  "block.nethelurgy.raw_tungsten_brick_slab": "Raw Tungsten Brick Slab",
+  "block.nethelurgy.raw_tungsten_brick_wall": "Raw Tungsten Brick Wall",
+
   "item.minecraft.potion.effect.decay": "Potion of Decay",
   "item.minecraft.splash_potion.effect.decay": "Splash Potion of Decay",
   "item.minecraft.lingering_potion.effect.decay": "Lingering Potion of Decay",
