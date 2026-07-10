@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "nethelurgy:raw_tungsten_bricks"
   },
-  "result": "nethelurgy:raw_tungsten_bricks_stairs",
+  "result": "nethelurgy:raw_tungsten_brick_stairs",
   "count": 1,
   "conditions": [
     {

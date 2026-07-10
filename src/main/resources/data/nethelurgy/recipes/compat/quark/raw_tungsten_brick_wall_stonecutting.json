@@ -3,8 +3,8 @@
   "ingredient": {
     "item": "nethelurgy:raw_tungsten_bricks"
   },
-  "result": "nethelurgy:raw_tungsten_bricks_vertical_slab",
-  "count": 2,
+  "result": "nethelurgy:raw_tungsten_brick_wall",
+  "count": 1,
   "conditions": [
     {
       "modid": "quark",
@@ -12,7 +12,7 @@
     },
     {
       "type": "quark:flag",
-      "flag": "vertical_slabs"
+      "flag": "raw_metal_bricks"
     }
   ]
 }

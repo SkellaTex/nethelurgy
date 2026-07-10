@@ -49,6 +49,12 @@ public class NTabs {
                 putAfter(entries, NBlocks.CUT_TUNGSTEN.get(), NBlocks.CUT_TUNGSTEN_STAIRS);
                 putAfter(entries, NBlocks.CUT_TUNGSTEN_STAIRS.get(), NBlocks.CUT_TUNGSTEN_SLAB);
             }
+            if (ModList.get().isLoaded(QUARK_ID)) {
+                putAfter(entries, NBlocks.TUNGSTEN_BLOCK.get(), NBlocks.RAW_TUNGSTEN_BRICKS);
+                putAfter(entries, NBlocks.RAW_TUNGSTEN_BRICKS.get(), NBlocks.RAW_TUNGSTEN_BRICK_STAIRS);
+                putAfter(entries, NBlocks.RAW_TUNGSTEN_BRICK_STAIRS.get(), NBlocks.RAW_TUNGSTEN_BRICK_SLAB);
+                putAfter(entries, NBlocks.RAW_TUNGSTEN_BRICK_SLAB.get(), NBlocks.RAW_TUNGSTEN_BRICK_WALL);
+            }
             putAfter(entries, Blocks.LAPIS_BLOCK, NBlocks.IGNITE_BLOCK);
         }
 

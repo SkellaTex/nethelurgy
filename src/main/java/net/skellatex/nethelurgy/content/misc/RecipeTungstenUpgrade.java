@@ -20,6 +20,7 @@ public class RecipeTungstenUpgrade extends CustomRecipe {
         super(idIn, category);
     }
 
+    public final int maxIngredients = 2;
 
     private ItemStack createEquipment(Container container){
         ItemStack equipment = ItemStack.EMPTY;
@@ -51,6 +52,15 @@ public class RecipeTungstenUpgrade extends CustomRecipe {
 
     @Override
     public boolean matches(CraftingContainer inv, Level worldIn) {
+        int itemCount = 0;
+        for (int i = 0; i < inv.getContainerSize(); i++) {
+            if (!inv.getItem(i).isEmpty()) {
+                itemCount++;
+            }
+        }
+        if (itemCount > this.maxIngredients) {
+            return false;
+        }
         return !createEquipment(inv).isEmpty();
     }
 

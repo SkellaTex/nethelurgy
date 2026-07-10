@@ -6,7 +6,6 @@
     }
   ],
   "type": "create:mixing",
-  "heatRequirement": "heated",
   "ingredients": [
     {
       "item": "nethelurgy:ignite"

@@ -4,5 +4,5 @@
   "features": [
     "nethelurgy:ore_diamond_extra"
   ],
-  "step": "underground_ores"
+  "step": "underground_structures"
 }

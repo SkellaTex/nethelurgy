@@ -8,5 +8,5 @@
     "nethelurgy:ore_iron",
     "nethelurgy:ore_diamond"
   ],
-  "step": "underground_ores"
+  "step": "underground_structures"
 }

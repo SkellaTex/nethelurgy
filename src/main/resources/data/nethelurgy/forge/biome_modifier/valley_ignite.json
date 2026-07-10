@@ -4,5 +4,5 @@
   "features": [
     "nethelurgy:ore_ignite"
   ],
-  "step": "underground_ores"
+  "step": "underground_structures"
 }
