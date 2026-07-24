@@ -77,7 +77,7 @@ public class NBlocks {
     public static final RegistryObject<Block> RAW_TUNGSTEN_BRICK_SLAB = registerItemPropertiesBlock("raw_tungsten_brick_slab", () ->
             new SlabBlock(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
     public static final RegistryObject<Block> RAW_TUNGSTEN_BRICK_WALL = registerItemPropertiesBlock("raw_tungsten_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(NBlocks.RAW_TUNGSTEN_BRICKS.get()).strength(1.5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
+            () -> new WallBlock(BlockBehaviour.Properties.copy(NBlocks.RAW_TUNGSTEN_BRICKS.get()).requiresCorrectToolForDrops().sound(SoundType.METAL)), new Item.Properties().fireResistant());
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

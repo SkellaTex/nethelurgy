@@ -2,13 +2,19 @@ package net.skellatex.nethelurgy.world.event;
 
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -17,10 +23,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.skellatex.nethelurgy.NConfig;
 import net.skellatex.nethelurgy.Nethelurgy;
 import net.skellatex.nethelurgy.registry.NAttributes;
+import net.skellatex.nethelurgy.registry.NItems;
 import net.skellatex.nethelurgy.registry.NTags;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = Nethelurgy.MOD_ID)
 public class NEvents {
@@ -68,8 +78,18 @@ public class NEvents {
 
     @SubscribeEvent
     public static void onBlockBreak(final BlockEvent.BreakEvent event) {
-        if (NConfig.HOT_BLOCK_BURNING.get() && (event.getState().is(NTags.Blocks.BURN_ON_BREAK))) {
+        if (NConfig.HOT_BLOCK_BURNING.get() && (event.getState().is(NTags.Blocks.BURN_ON_BREAK)))
             event.getPlayer().setSecondsOnFire(4);
+    }
+
+    @SubscribeEvent
+    public static void onLivingAttack(LivingAttackEvent event) {
+        LivingEntity entity = event.getEntity();
+        if (event.getSource().is(DamageTypes.HOT_FLOOR)) {
+            ItemStack boots = entity.getItemBySlot(EquipmentSlot.FEET);
+            if (boots.is(NTags.Items.HOT_FLOOR_IMMUNE)) {
+                event.setCanceled(true);
+            }
         }
     }
 
@@ -96,7 +116,45 @@ public class NEvents {
             if (NConfig.GOLD_ARMOR_MAGIC_RESISTANCE.get() && (stack.is(Items.GOLDEN_HELMET) && slot == EquipmentSlot.HEAD || stack.is(Items.GOLDEN_BOOTS) && slot == EquipmentSlot.FEET || stack.is(Items.GOLDEN_CHESTPLATE) && slot == EquipmentSlot.CHEST || stack.is(Items.GOLDEN_LEGGINGS) && slot == EquipmentSlot.LEGS)) {
                 event.addModifier(NAttributes.MAGIC_RESISTANCE.get(), new AttributeModifier(uuid, "Magic Resistance", 0.15D, AttributeModifier.Operation.MULTIPLY_BASE));
             }
+        }
+        if (slot == EquipmentSlot.MAINHAND) {
+            if (stack.is(NTags.Items.SPECTER_TOOLS)) {
+            event.addModifier(ForgeMod.ENTITY_REACH.get(),  new AttributeModifier(UUID.fromString("39cb4eb4-d06d-47a4-b374-afb0adf642e3"), "Entity Reach", 1.0F, AttributeModifier.Operation.ADDITION));
+            event.addModifier(ForgeMod.BLOCK_REACH.get(),  new AttributeModifier(UUID.fromString("d5ca2e42-ba52-4615-bfbe-3d7048861a17"), "Block Reach", 1.0F, AttributeModifier.Operation.ADDITION));
+            }
+        }
+    }
 
+    private static final Supplier<Item> HELMET = NItems.SPECTER_HELMET;
+    private static final Supplier<Item> CHESTPLATE = NItems.SPECTER_CHESTPLATE;
+    private static final Supplier<Item> LEGGINGS = NItems.SPECTER_LEGGINGS;
+    private static final Supplier<Item> BOOTS = NItems.SPECTER_BOOTS;
+
+    @SubscribeEvent
+    public static void onLivingTick(LivingEvent.LivingTickEvent event) {
+        LivingEntity entity = event.getEntity();
+        if (entity.level().isClientSide()) return;
+        EquipmentSlot[] slots = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
+        Item[] requiredItems = {HELMET.get(), CHESTPLATE.get(), LEGGINGS.get(), BOOTS.get()};
+
+        boolean hasFullSet = true;
+        for (int i = 0; i < slots.length; i++) {
+            ItemStack stack = entity.getItemBySlot(slots[i]);
+            if (stack.getItem() != requiredItems[i]) {
+                hasFullSet = false;
+                break;
+            }
+        }
+        if (hasFullSet) {
+            List<MobEffectInstance> effectsToRemove = new ArrayList<>();
+            for (MobEffectInstance effect : entity.getActiveEffects()) {
+                if (!effect.getEffect().isBeneficial()) {
+                    effectsToRemove.add(effect);
+                }
+            }
+            for (MobEffectInstance effect : effectsToRemove) {
+                entity.removeEffect(effect.getEffect());
+            }
         }
     }
 }

@@ -22,6 +22,8 @@ public class NTags {
     public static class Items {
         public static final TagKey<Item> CROSSBOW_BOLTS = registerItemTag("crossbow_bolts");
         public static final TagKey<Item> TUNGSTEN_UPGRADE_INCOMPATIBLE = registerItemTag("tungsten_upgrade_incompatible");
+        public static final TagKey<Item> HOT_FLOOR_IMMUNE = registerItemTag("hot_floor_immune");
+        public static final TagKey<Item> SPECTER_TOOLS = registerItemTag("specter_tools");
     }
 
     private static TagKey<Item> registerItemTag(String name) {

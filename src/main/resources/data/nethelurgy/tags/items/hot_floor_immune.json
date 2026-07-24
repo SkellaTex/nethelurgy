@@ -1,0 +1,7 @@
+{
+  "__comment": "boots that prevent damage from magma blocks",
+  "values": [
+    "minecraft:netherite_boots",
+    "nethelurgy:tungsten_boots"
+  ]
+}

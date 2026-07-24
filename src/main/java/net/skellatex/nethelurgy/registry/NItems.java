@@ -70,12 +70,32 @@ public class NItems {
     // Compat
     public static final RegistryObject<Item> CRUSHED_RAW_TUNGSTEN = ITEMS.register("crushed_raw_tungsten",
             () -> new Item(new Item.Properties().fireResistant()));
-
     public static final RegistryObject<Item> RAW_TUNGSTEN_NUGGET = ITEMS.register("raw_tungsten_nugget",
             () -> new Item(new Item.Properties().fireResistant()));
-
     public static final RegistryObject<Item> TUNGSTEN_KNIFE = ITEMS.register("tungsten_knife",
             compat(FARMERS_DELIGHT_ID, it -> FarmersDelightCompat.KNIFE_FACTORY_TUNGSTEN.apply(it), new Item.Properties().fireResistant()));
+
+    // Unused
+    public static final RegistryObject<Item> SPECTER_INGOT = ITEMS.register("specter_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SPECTER_SWORD = ITEMS.register("specter_sword",
+            () -> new SwordItem(NToolTiers.SPECTER,6, -2.4F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SPECTER_PICKAXE = ITEMS.register("specter_pickaxe",
+            () -> new PickaxeItem(NToolTiers.SPECTER,4, -2.8F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SPECTER_AXE = ITEMS.register("specter_axe",
+            () -> new AxeItem(NToolTiers.SPECTER,9, -3F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SPECTER_SHOVEL = ITEMS.register("specter_shovel",
+            () -> new ShovelItem(NToolTiers.SPECTER,4.5F, -2.9F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SPECTER_HOE = ITEMS.register("specter_hoe",
+            () -> new HoeItem(NToolTiers.SPECTER,0, 0, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SPECTER_HELMET = ITEMS.register("specter_helmet",
+            () -> new SpecterArmorItem(NArmorMaterials.SPECTER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SPECTER_CHESTPLATE = ITEMS.register("specter_chestplate",
+            () -> new SpecterArmorItem(NArmorMaterials.SPECTER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SPECTER_LEGGINGS = ITEMS.register("specter_leggings",
+            () -> new SpecterArmorItem(NArmorMaterials.SPECTER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SPECTER_BOOTS = ITEMS.register("specter_boots",
+            () -> new SpecterArmorItem(NArmorMaterials.SPECTER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

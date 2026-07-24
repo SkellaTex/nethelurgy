@@ -1,4 +1,5 @@
 {
+  "__comment": "blocks that set the player on fire when broken",
   "values": [
     "minecraft:magma_block",
     "nethelurgy:nether_ignite_ore",
