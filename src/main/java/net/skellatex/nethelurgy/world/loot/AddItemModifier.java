@@ -16,24 +16,21 @@ import java.util.function.Supplier;
 
 import javax.annotation.Nonnull;
 
-public class AddItemLootModifier extends LootModifier
+public class AddItemModifier extends LootModifier
 {
-    public static final Supplier<Codec<AddItemLootModifier>> CODEC = Suppliers.memoize(() ->
+    public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(() ->
             RecordCodecBuilder.create(inst -> codecStart(inst).and(
                             inst.group(
                                     ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter((m) -> m.addedItem),
                                     Codec.INT.optionalFieldOf("count", 1).forGetter((m) -> m.count)
                             )
                     )
-                    .apply(inst, AddItemLootModifier::new)));
+                    .apply(inst, AddItemModifier::new)));
 
     private final Item addedItem;
     private final int count;
 
-    /**
-     * This loot modifier adds an item to the loot table, given the conditions specified.
-     */
-    protected AddItemLootModifier(LootItemCondition[] conditionsIn, Item addedItemIn, int count) {
+    protected AddItemModifier(LootItemCondition[] conditionsIn, Item addedItemIn, int count) {
         super(conditionsIn);
         this.addedItem = addedItemIn;
         this.count = count;

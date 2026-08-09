@@ -58,6 +58,7 @@ public class Nethelurgy {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             NMobEffects.setup();
+            NFlammables.register();
             NRecipeTypes.setup();
             DispenserBlock.registerBehavior(NItems.TUNGSTEN_BOLT.get(), new AbstractProjectileDispenseBehavior() {
                 protected Projectile getProjectile(Level level, Position pos, ItemStack stack) {

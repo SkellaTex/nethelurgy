@@ -18,7 +18,7 @@ public class NLootModifiers {
         GLM.register("add_enchanted_book", AddEnchantedBookLootModifier.CODEC);
     }
     static {
-        GLM.register("add_item", AddItemLootModifier.CODEC);
+        GLM.register("add_item", AddItemModifier.CODEC);
     }
     static {
         GLM.register("add_loot_table", AddLootTableModifier.CODEC);
